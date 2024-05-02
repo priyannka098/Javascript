@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Card generator</title>
+</head>
+<body>
+    <script>
+        let Math= Number(prompt("enter math marks"));
+        let Science=  Number(prompt("enter science marks"));
+        let English=  Number(prompt("enter english marks"));
+        let Hindi=  Number(prompt("enter  hindi marks"));
+        let Comp=  Number(prompt("enter  comp marks"));
+        let Avg= (Math+Comp+Science+English+Hindi)/5;
+
+        if(Math>60 && Science>60 && Comp>60 && English>60 && Hindi>60)
+        {
+            if(Avg>70){
+                console.log("You secured Aplus and your avg is:" Avg);
+             } 
+             else{
+                if(Avg>45 && Avg<70){
+                    console.log('you secured Bplus and  your avg is,' Avg);
+                }
+    
+                else {
+                    console.log('you secured Cplus and your avg is',Avg)
+                }
+            }
+
+            }
+             else{
+              console.log("you fail")  
+             }
+        
+
+    
+
+
+
+
+    </script>  
+</body>
+</html>
