@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+    
+</head>
+<body>
+    <h1> Creating an array </h1>
+    <script>
+       
+    
+//creating an array in literal way
+ let arr=[ 1,3,7,'priyanka'];
+ arr[0]=8;                                  //repalce the value  1 with 8  at index 0
+ 
+ console.log("literal",arr);
+
+//creating an array by constructor way
+ let arr1=new Array(1,4,7,8);
+ console.log("constrructor",arr1);
+ console.log( "element:",  arr1[1])
+ console.log(new Array(3))               //it crates or return 3 array of empty slots
+
+
+ //creating an array by Array.of()
+ let myArr=Array.of("priya",1,2)
+ 
+ console.log(myArr);
+ console.log("length",(myArr.length));
+ console.log(" element:",myArr[1]);
+ console.log(Array.of(3));                     //but it will return or create  an array with 3 element.
+
+
+
+</script>
+</body>
+</html>
