@@ -8,7 +8,9 @@ let updatedArray=""
 updated4=arr.splice(100)
 updatedArray=arr.splice()
 console.log('actual arr',arr);
-console.log('updated array',updated4);
+console.log('updated array',updated4 );
+
+
 
 
 
