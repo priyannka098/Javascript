@@ -16,8 +16,11 @@
 //  }
 
 
-console.log(y)
+
 let x=function(){
-    
+    console.log(hello)
+                               // for function expression and arrow function it treat function as variale                               // it  give value as undefined
+
 }
 let y=x();
+console.log(y);  //undefined
