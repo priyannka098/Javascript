@@ -8,12 +8,30 @@
 <body>
     <h1>this keyword</h1>
     <script>
-        const value=()=>{
-      let username="priya";
-console.log(this);// give global ob
-    console.log(this.username);// undefined
-  }
- value();
+    //      let obj1 = {
+    //     name: "utsav",
+    //     print() {
+           
+    //       let hello=()=> {
+    //         console.log(this);
+    //       }
+    //       hello();
+    //     },
+    //   };
+    //   obj1.print();
+         
+    
+    let obj = {
+          name: "utsav",
+          add: {
+            ca: "blr",
+            pa: "delhi",
+            isAddress() {
+              console.log(this);
+            },
+          },
+        };
+    
     </script>
     
 </body>

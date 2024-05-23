@@ -40,18 +40,18 @@ console.log(this);// give global object
 //  }
 //   fun();
 
-
-
-//  let obj={
-//     name:'priyanka',
-//     print(){
-//         let hello=()=>{
-//             console.log(this);
-//         }
-//     hello();
-//     } 
-//     obj.print()
-// }
+// example for object
+let obj = {
+    name: "utsav",
+    add: {
+      ca: "blr",
+      pa: "delhi",
+      isAddress() {
+        console.log(this.add);
+      },
+    },
+  };
+  
 
 
 
