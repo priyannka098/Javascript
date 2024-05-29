@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transvering in Dom</title>
+</head>
+<body id="body">
+    <h1 id="hello"> traversing in Dom</h1>
+ <div id="container">
+    <h1 id="head">hello i am first child</h1> 
+    <h6 id="head6">hello how are you</h6>
+    <img id="img" src="">
+    <p id="para">hello i am last child</p>
+</div>   
+</body> 
+<script>
+    /*  1)Parent node and Parent element */
+    // let hello=document.getElementById('para');
+    // console.log(hello.parentNode);
+    // console.log(hello.parentElement);
+
+    //  hello.parentNode.style.backgroundColor="blue";
+    //  hello.parentElement.style.backgroundColor="blue"; //apply color by both.
+
+     let container=document.getElementById('container');
+    //  console.log(container.parentNode);
+    //  console.log(container.parentElement);
+
+     /* 2) ChildNodes - it return all the children including space and comment*/
+    //   let container=document.getElementById('container');
+    //   console.log(container.childNodes);
+      let head=document.getElementById('head');
+      let head6=document.getElementById('head6'); 
+    //   console.log(head.childNodes); // since it is child,so give only text.
+
+    /* 3)  ChildNodes -It return  all the children excluding spaces and comment*/ 
+    // let container=document.getElementById("container");
+    // console.log(container.children);
+    //  let head=document.getElementById('head'); 
+    //    console.log(head.children);
+    //   container.children.style.backgroundColor="blue"; //we cannot style .
+
+    /* 4)Child Element Count-it return children count excluding space and comment */
+    // console.log(container.childElementCount);
+
+    /* 5)Node Name/Tag Name-it return tag name(ie. div,h1,p) */
+    //  console.log(container.nodeName);
+
+     /* 6)Node Type -it return  interger value*/
+     /*note:-
+     1-element node(Html element)
+     2-attribute node
+     3-text node
+     8-Comment node
+     9-Document node
+     10-document type node */
+    //  console.log(head.nodeType);
+    //  let img=document.getElementById('img')
+    //  console.log(img.nodeType);
+    //  console.log(container.childNodes[3].nodeType)
+
+     /* 7)FirstChild-it return  the first child of parent including space and comments */
+    //  console.log(container.firstChild);
+     let body=document.getElementById('body');
+    //  console.log("body child:");
+    //  console.log(body.firstChild);
+     
+   /*8)First Element Child -it return the first child of parents excluding the space and comment */
+//    console.log(container.firstElementChild);
+//    console.log(body.firstElementChild);
+
+/* 9)Last Child -it return the last child of parents including space and comment. */
+// console.log(container.lastChild);
+// console.log(body.lastChild)
+
+
+/*10)Last Child Element -it return  last child Element of parents excluding space and comment. */
+//   console.log(container.lastElementChild);
+//   console.log(body.lastElementChild)
+
+  //Siblings  method
+
+ /* 11)Next Sibling -it return the next sibling including space and comment */
+ console.log(container.nextSibling);
+ console.log(head6.nextSibling);
+
+/* 12)Next Element Sibling-it return  next sibling excluding space and comment */
+ console.log(container.nextElementSibling);
+ console.log(head6.nextElementSibling);
+
+/* 12)Previous Sibling-it return the previous sibling including space and comment */
+console.log(head6.previousSibling);
+console.log(container.previousSibling);
+
+
+/* 12)Previous Element Sibling-it return  the previous sibling excluding space and comment.*/
+console.log(head6.previousElementSibling);   
+console.log(container.previousElementSibling);
+
+
+
+
+
+
+
+
+
+</script>
+</html>

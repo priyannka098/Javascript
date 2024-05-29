@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1 id="id1" class="hed ">hello i am div1</h1>
+        <h1 id="id2" class="hed hed2 ">hello i am div2</h1>
+        <p id="id3" class="hed para ">hello i am div3</p>
+    </div>
+</body>
+<script>
+    //getElementbyClassaName
+    let result=" "
+    result=document.getElementsByClassName('hed');
+    console.log( "ByClassanme:",result);
+
+    //getElementByTagName
+    let result1=document.getElementsByTagName('p');
+    console.log( " ByTagName:" ,result1);
+     
+    //QuerySelectorAll  - it we can select  class name,tag name,query
+    //className
+    let result2=document.querySelectorAll('.hed2');
+    console.log( "qslClassName",(result2));
+
+    //by Tagname
+    let result3=document.querySelectorAll('h1')
+    console.log( "qslTagName",result3);
+
+    //by Query
+    let result4=document.querySelectorAll('.container>h1');
+    console.log("qslQuery",result4);
+
+    
+
+
+</script>
+</html>

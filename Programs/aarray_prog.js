@@ -15,23 +15,24 @@ let arr=[{ name:'utsav',sal:10 ,age:25, address:'delhi'},
 //     )}
 // }
 
-/* retrieve all employee name  in array */
+/* 1) retrieve all employee name  in array */
 //  let result=arr.map((item,i,o_arr)=>{
 //     return item.name  
 
 // })
 // console.log(result); 
-// /*   retrieve employee name  whoese sal is maximum */
-// const result1=arr.reduce((acc,item,i,o_arr)=>{
-//     if(item.sal>acc.sal){
-//         acc=item;
 
-//     }
-//     return acc
-// },);
-//  console.log(result1.name);
+ /* 2)   retrieve employee name  whoese sal is maximum */
+const result1=arr.reduce((acc,item,i,o_arr)=>{
+    if(item.sal>acc.sal){
+        acc=item;
+
+    }
+     return acc
+},);
+ console.log(result1.name);
  
- /* retrieve employee name whose sal is minimum */
+ /* 3 ) retrieve employee name whose sal is minimum */
 //  const minSal=arr.reduce((acc,item,i,o_arr)=>{
 //     if(item.sal<acc.sal){
 //         acc=item;
@@ -49,12 +50,19 @@ let arr=[{ name:'utsav',sal:10 ,age:25, address:'delhi'},
     
 //  }
 //  console.log(max)
-/*  retrieve all employee whoese addres is delhi */ 
-let address=arr.filter((item)=>{
-    return item.address=='delhi'
-})
-console.log(address)
+/* 4) retrieve all employee whoese addres is delhi */ 
+// let address=arr.filter((item)=>{
+//     return item.address=='delhi'
+// })
+// console.log(address)
  
+
+
+
+
+
+
+
 
 
 
